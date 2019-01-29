@@ -1,4 +1,4 @@
-package refactoring_gilbut.chap03_after_assertion;
+package refactoring_gilbut.chap03.after_assertion;
 
 import java.util.Arrays;
 
