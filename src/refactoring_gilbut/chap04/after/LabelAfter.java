@@ -7,6 +7,10 @@ public class LabelAfter {
 		this.label = lable;
 	}
 
+	public static LabelAfter newNull() {
+		return new NullLabel();
+	}
+
 	public void display() {
 		System.out.printf("display : %s%n", label);
 	}

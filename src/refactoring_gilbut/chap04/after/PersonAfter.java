@@ -15,7 +15,7 @@ public class PersonAfter {
 	}
 
 	public PersonAfter(LabelAfter name) {
-		this(name, new NullLabel());
+		this(name, LabelAfter.newNull());
 	}
 
 	public LabelAfter getName() {
