@@ -4,14 +4,13 @@ public class BookAfter {
 	private String title;
 	private String isbn;
 	private String price;
-	private Author author = new Author();
+	private Author author;
 
 	public BookAfter(String title, String isbn, String price, String authorName, String authorMail) {
 		this.title = title;
 		this.isbn = isbn;
 		this.price = price;
-		this.author.authorName = authorName;
-		this.author.authorMail = authorMail;
+		this.author = new Author(authorName, authorMail);
 	}
 
 	public String getTitle() {
@@ -39,24 +38,24 @@ public class BookAfter {
 	}
 
 	public String getAuthorName() {
-		return author.authorName;
+		return author.getAuthorName();//위임
 	}
 
 	public void setAuthorName(String authorName) {
-		this.author.authorName = authorName;
+		this.author.setAuthorName(authorName);//위임
 	}
 
 	public String getAuthorMail() {
-		return author.authorMail;
+		return author.getAuthorMail();//위임
 	}
 
 	public void setAuthorMail(String authorMail) {
-		this.author.authorMail = authorMail;
+		this.author.setAuthorMail(authorMail);//위임
 	}
 
 	public String toXml() {
-		String autor = tag("author", tag("name", author.authorName) + tag("mail", author.authorMail));
-		String book = tag("book", tag("title", title) + tag("isbn", isbn) + tag("price", price) + autor);
+		String autor = tag("author", tag("name", author.getAuthorName()) + tag("mail", author.getAuthorMail()));
+		String book= tag("book", tag("title", title) +"\r\n"+ tag("isbn", isbn) +"\r\n"+ tag("price", price) +"\r\n"+ autor);
 		return book;
 	}
 
