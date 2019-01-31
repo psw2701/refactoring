@@ -43,6 +43,6 @@ public abstract class ShapeAfter {
 
 	@Override
 	public String toString() {
-		return String.format("[%-10s, (%3s, %3s) -(%3s, %3s)]", getName(), startX, startY, endX, endY);
+		return String.format("[%-10s, (%3s, %3s) - (%3s, %3s)]", getName(), startX, startY, endX, endY);
 	}
 }
