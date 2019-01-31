@@ -8,12 +8,12 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		before();
-		
+
 		after();
 	}
 
 	private static void after() {
-		LoggerAfter logger= new LoggerAfter();
+		LoggerAfter logger = new LoggerAfter();
 		logger.log("information #1");
 		logger.start();
 		logger.log("information #2");
