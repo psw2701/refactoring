@@ -2257,7 +2257,7 @@
                                       <movable>true</movable>
                                     </target>
                                     <bendpoints/>
-                                    <name></name>
+                                    <name>parseCommand(name)</name>
                                     <direction>true</direction>
                                     <order>4</order>
                                     <oldOrder>4</oldOrder>
@@ -2274,7 +2274,7 @@
                                 <movable>true</movable>
                               </target>
                               <bendpoints/>
-                              <name></name>
+                              <name>execute(commandSequence)</name>
                               <direction>true</direction>
                               <order>3</order>
                               <oldOrder>3</oldOrder>
@@ -2615,7 +2615,7 @@
                                       <movable>true</movable>
                                     </target>
                                     <bendpoints/>
-                                    <name></name>
+                                    <name>relativeMove(dx, dy)</name>
                                     <direction>true</direction>
                                     <order>6</order>
                                     <oldOrder>6</oldOrder>
@@ -2958,7 +2958,7 @@
                                 <movable>true</movable>
                               </target>
                               <bendpoints/>
-                              <name></name>
+                              <name>executeCommand(command)</name>
                               <direction>true</direction>
                               <order>5</order>
                               <oldOrder>5</oldOrder>
@@ -2979,7 +2979,7 @@
                               <source class="net.java.amateras.uml.sequencediagram.model.ActivationModel" reference="../../../../../../../../.."/>
                               <target class="net.java.amateras.uml.sequencediagram.model.ActivationModel" reference="../../.."/>
                               <bendpoints/>
-                              <name></name>
+                              <name>execute(commandSequence)</name>
                               <direction>true</direction>
                               <order>2</order>
                               <oldOrder>2</oldOrder>

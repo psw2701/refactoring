@@ -11,7 +11,7 @@ public class Robot {
 		this.name = name;
 	}
 
-/*	public void execute(String commandSequence) {
+	public void execute(String commandSequence) {
 		StringTokenizer tokenizer = new StringTokenizer(commandSequence);
 
 		try {
@@ -23,9 +23,10 @@ public class Robot {
 			// TODO: handle exception
 			System.out.println("Invalid command : " + e.getMessage());
 		}
-	}*/
+	}
 
-	public void executeCommand(Command command) throws InvalidCommandException {
+	public void executeCommand(String commandString) throws InvalidCommandException {
+		Command command = Command.parseCommand(commandString);
 		command.execute(this);
 	}
 
