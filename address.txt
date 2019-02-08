@@ -1,0 +1,5 @@
+#
+#Fri Feb 08 16:06:33 KST 2019
+Hanjimin=test1@dgit.or.kr
+Song\ Hae\ Gyo=test2@korea.com
+Kim\ Min\ Su=test3@naver.com
